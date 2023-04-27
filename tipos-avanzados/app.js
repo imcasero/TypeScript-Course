@@ -5,16 +5,16 @@ var person = {
 };
 var person2 = {
     name: "Doe",
-    age: 12
+    age: 12,
 };
 var personiner = {
-    name: 'Juan',
-    sayHello: function () { }
+    name: "Juan",
+    sayHello: function () { },
 };
 var personiner2 = {
-    name: 'Juan',
+    name: "Juan",
     age: 14,
-    sayHello: function () { }
+    sayHello: function () { },
 };
 //Objetos
 //Para crear un objeto tenemos que tiparlo como interface o como type
@@ -22,9 +22,12 @@ var personiner2 = {
 //Para objetos dinamicos
 var myObjet = {};
 //a partir de aqui se rellena solo
-myObjet.name = 'pep';
+myObjet.name = "pep";
 myObjet.age = 29;
 var persona = {
-    name: 'Jonh',
-    age: 12
+    name: "Jonh",
+    age: 12,
+};
+var personaOR = {
+    name: "Jonh",
 };

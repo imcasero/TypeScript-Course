@@ -14,42 +14,53 @@ const person: Person = {
 };
 const person2: Person = {
   name: "Doe",
-  age: 12
+  age: 12,
 };
 //interface mas para objetos
 interface Personiner {
-  name:String,
-  age?:number,
-  sayHello():void //asi podemos definir metodos
+  name: String;
+  age?: number;
+  sayHello(): void; //asi podemos definir metodos
 }
 const personiner: Personiner = {
-  name: 'Juan',
-  sayHello: function(){}
+  name: "Juan",
+  sayHello: function () {},
 };
 const personiner2: Personiner = {
-  name: 'Juan',
+  name: "Juan",
   age: 14,
-  sayHello: function(){}
+  sayHello: function () {},
 };
 //Objetos
 //Para crear un objeto tenemos que tiparlo como interface o como type
 
 //Records
 //Para objetos dinamicos
-const myObjet:Record<string , any> = {};
+const myObjet: Record<string, any> = {};
 
 //a partir de aqui se rellena solo
-myObjet.name = 'pep';
+myObjet.name = "pep";
 myObjet.age = 29;
 //Union
-type PersonName ={
-  name:string;
-}
+type PersonName = {
+  name: string;
+};
 type PersonAge = {
-  age:number;
-}
+  age: number;
+};
 type personUnion = PersonName & PersonAge;
 const persona: personUnion = {
-  name: 'Jonh',
-  age: 12
-}
+  name: "Jonh",
+  age: 12,
+};
+//OR
+type PersonNameOR = {
+  name: string;
+};
+type PersonAgeOR = {
+  age: number;
+};
+type personUnionOR = PersonName | PersonAge; //Con que uno cumpla con la union no se queja
+const personaOR: personUnionOR = {
+  name: "Jonh",
+};
